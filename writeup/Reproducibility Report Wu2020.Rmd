@@ -1,0 +1,97 @@
+---
+title: "Reproducibility Report for Study Variational Item Response Theory: Fast, Accurate, and Expressive by Wu et al (2020)"
+author: "Reproducibility Project by Michael Hardy (hardym@stanford.edu)"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+---
+
+<!-- Reproducibility reports should all use this template to standardize reporting across projects. These reports will be public supplementary materials that accompany the summary report(s) of the aggregate results. -->
+
+## Introduction
+
+This is my second reproduction project proposal (the first being Coomans et al. 2017), found here: https://github.com/psych251/coomans2016 
+
+In this reproduction study, Wu et al. create a model for a variational Bayesian inference algorithm for computing subject and item parameters for educational and cognitive assessments.This is important as it offers an efficient solution a typically computationally expensive expression of assessment metrics, while simultaneously allowing for a more flexible model to capture nuanced relationships within large, modern datasets.
+
+
+**Key analysis:** Of greatest interest is the reproduction of the PISA results. And no analyses beyond those performed in the original paper are planned.
+
+### Justification for choice of study
+
+This study was performed here at Stanford combining two areas of interest for me: modern psychometrics and advanced machine learning. The data pipelines, the programming used, and the mathematics involved will all be challenging. If I can do it, I will be much better equipped with the mathematical, computational, statistical, technical, and theoretical skills for research in these areas.
+
+### Anticipated challenges
+
+Yes: this paper is a very advanced paper, combining modern machine learning techniques with modern psychometric techniques. All of this content is very advanced, and I suspect that each step of reproduction will be challenging. A better question for this reproduction might be, are there any steps that will *not* be challenging?
+
+
+### Links
+
+Project repository (on Github): https://github.com/psych251/wu2020.git
+
+Original paper (as hosted in your repo): https://github.com/psych251/wu2020/blob/main/original_paper/VariationalIRT_Wu2020.pdf
+
+## Methods
+
+### Description of the steps required to reproduce the results
+
+Please describe all the steps necessary to reproduce the key result(s) of this study. 
+
+### Differences from original study
+
+Explicitly describe known differences in the analysis pipeline between the original paper and yours (e.g., computing environment). The goal, of course, is to minimize those differences, but differences may occur. Also, note whether such differences are anticipated to influence your ability to reproduce the original results.
+
+## Project Progress Check 1
+
+### Measure of success
+
+Please describe the outcome measure for the success or failure of your reproduction and how this outcome will be computed.
+
+
+### Pipeline progress
+
+Earlier in this report, you described the steps necessary to reproduce the key result(s) of this study. Please describe your progress on each of these steps (e.g., data preprocessing, model fitting, model evaluation).
+
+
+## Results
+
+### Data preparation
+
+Data preparation following the analysis plan.
+	
+```{r include=F}
+### Data Preparation
+
+#### Load Relevant Libraries and Functions
+
+#### Import data
+
+#### Data exclusion / filtering
+
+#### Prepare data for analysis - create columns etc.
+```
+
+### Key analysis
+
+The analyses as specified in the analysis plan.  
+
+*Side-by-side graph with original graph is ideal here*
+
+###Exploratory analyses
+
+Any follow-up analyses desired (not required).  
+
+## Discussion
+
+### Summary of Reproduction Attempt
+
+Open the discussion section with a paragraph summarizing the primary result from the key analysis and assess whether you successfully reproduced it, partially reproduced it, or failed to reproduce it.  
+
+### Commentary
+
+Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis of the dataset, (b) assessment of the meaning of the successful or unsuccessful reproducibility attempt - e.g., for a failure to reproduce the original findings, are the differences between original and present analyses ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the reproducibility attempt (if you contacted them).  None of these need to be long.
